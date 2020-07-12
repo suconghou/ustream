@@ -31,6 +31,9 @@
         }else{
             var player = document.getElementById("player")
             player.setAttribute("v",query.v)
+            if(query.audio && query.audio!='false'){
+                player.setAttribute('audio',"true");
+            }
         }
     </script>
 </body>
