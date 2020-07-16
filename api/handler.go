@@ -42,7 +42,7 @@ func routeMatch(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	if r.URL.Path == "/status" {
+	if r.URL.Path == "/video/api/status" {
 		status(w, r)
 		return
 	}
