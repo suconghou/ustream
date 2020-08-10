@@ -8,14 +8,6 @@
             "dest": "/play.html"
         },
         {
-            "src": "/video/.*(json|ts|mp4|webm|jpg|webp)",
-            "dest": "/api/handler.go"
-        },
-        {
-            "src": "/video/api/.*",
-            "dest": "/api/handler.go"
-        },
-        {
             "src": "/.*",
             "dest": "/index.html"
         }
