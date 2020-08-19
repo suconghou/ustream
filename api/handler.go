@@ -64,7 +64,7 @@ func status(w http.ResponseWriter, r *http.Request) {
 	if bs, err := json.Marshal(&sysStatus); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	} else {
-		w.Header().Set("Content-Type", "text/json; charset=utf-8")
+		w.Header().Set("Content-Type", "application/json; charset=utf-8")
 		w.Write(bs)
 	}
 }
